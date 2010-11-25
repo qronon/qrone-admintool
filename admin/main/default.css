@@ -1,0 +1,81 @@
+﻿body{
+	margin:0px;
+	font-family:"Arial";
+}
+
+img{
+	border-width:0px;
+}
+
+p{
+	margin:6px;
+	padding:0px;
+}
+
+.codebox{
+	font-family:'Courier New';
+	font-size:10pt;
+	color:white;
+	
+	scale9:url(qrblackback.png) 15px 50px 15px 25px;
+	background-color:#312525;
+}
+
+.leftcolumn{
+	width:500px;
+}
+
+.rightcolumn{
+	width:200px;
+	margin-left:15px;
+	float:right;
+	border:solid 0px gray;
+	border-left-width:1px;
+	include:url(sidebar.html);
+}
+
+.block{
+	clear:both;
+	margin:10px;
+	font-size:12pt;
+}
+
+#point{
+	margin:10px;
+	font-size:10pt;
+	line-height:200%;
+}
+
+.item{
+	margin:10px;
+	font-size:10pt;
+	line-height:200%;
+}
+
+.item img{
+	margin-right:3px;
+}
+
+.hilight{
+	background-color:#ffdddd;
+}
+
+h4{
+	margin:5px;
+}
+
+.methoddesc{
+	padding:15px;
+	border:1px solid gray;
+	background-color:#eee;
+}
+
+table.list{
+	border-collapse: collapse;
+	margin:15px;
+}
+
+.list td{
+	margin:0px;
+	border:1px solid gray;
+}
