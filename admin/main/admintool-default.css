@@ -1,0 +1,13 @@
+
+.repo{
+	font-size:10pt;
+	width:450px;
+	padding:3px;
+	margin:3px;
+	border: solid 1px #DDD;
+}
+
+.repo-title{
+	font-size:12pt;
+	font-weight:bold;
+}

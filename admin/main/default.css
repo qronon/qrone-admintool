@@ -28,23 +28,11 @@ p{
 }
 
 .alert{
-	margin:12px;
+	margin:24px;
 	padding:6px;
 	background-color:#FFF2CA;
 	border: solid 1px #E4CD86;
-	width:500px;
-}
-
-.yellowbtn{
-	scale9:url(yellow_button.png) 20px 145px;
-}
-
-.alert{
-	margin:12px;
-	padding:6px;
-	background-color:#FFF2CA;
-	border: solid 1px #E4CD86;
-	width:500px;
+	width:400px;
 }
 
 .leftcolumn{

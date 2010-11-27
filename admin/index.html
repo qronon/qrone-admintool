@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>QrONE JavaScript</title>
+<title>QrONE - Control Panel</title>
 <meta name="include-in" content="main/qrone-frame.html#content"/>
 <link rel="stylesheet" type="text/css" href="main/default.css" include />
+<link rel="stylesheet" type="text/css" href="main/admintool-default.css" include />
 </head>
 <body style="font-family:'Arial';margin:0px;">
 
@@ -11,43 +12,34 @@
 </div>
 
 <div style="font-size:11pt">
-<div id="title"></div>
-<div id="intro"></div>
-
-<div id="point">
-<img src="img/led-icons/accept.png" align="absmiddle"/>
-<a href="qrone-0.0.5.zip" class="point"></a><br/>
-</div>
-
-<div id="desc"></div>
-<br>
-<code id="code" class="codebox"></code>
-<br>
-<div id="desc2"></div>
-
 
 <h2>Installed Repositories</h2>
 
 The following repositories are currently installed to your web site.
 <hr>
 
+<img src="main/addgithub.png"><br>
 
+<div class="repo">
+<img src="main/uninstall.png" align="right">
+<span class="repo-title"><a href="https://github.com/qronon/qrone-admintool">qrone-admintool</a></span>
+by qronon<br>
+Administration tool of qrone.<br>
 <br>
-Github <input type="text"/> <input type=submit>
 
-<img src="main/addgithub.png">
+</div>
+<div class="repo">
+<img src="main/uninstall.png" align="right">
+<span class="repo-title"><a href="https://github.com/qronon/qrone-admintool">qrone-admintool</a></span>
+by qronon<br>
+Administration tool of qrone.<br>
+<br>
+
+</div>
 
 <div class="alert">
-No software is installed to your site.
+No repository is installed to your site.<br>
 </div>
 
-
-Github test again! logging ... logging...123
-
-<h3>QrONE-0.0.5 Release</h3>
-
-Google AppEngine で動作するようにしました。ImageIO が利用できないので画像 API を使って画像合成をするようしたんですが、なんかあんまり早くない。キャッシュタイミングを考えないと駄目そうだ。
-
-</div>
 
 </body></html>
