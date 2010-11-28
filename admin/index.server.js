@@ -20,7 +20,7 @@ document.set("#point", function(doc,e){
 
 var l = repository.list();
 document.set("#repolist", function(doc,e){
-	doc.set(".alert", "len:" + l.getLength());
+	doc.set(".alert", "len:" + l.length);
 	doc.out(e);
 	/*
 	if(l.length > 0){
