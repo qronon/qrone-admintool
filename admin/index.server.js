@@ -18,6 +18,7 @@ document.set("#point", function(doc,e){
 });
 */
 
+/*
 var l = repository.list();
 document.set("#repolist", function(doc,e){
 	
@@ -31,6 +32,7 @@ document.set("#repolist", function(doc,e){
 		doc.out(b);
 	}
 });
+*/
 
 document.out();
 
