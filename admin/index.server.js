@@ -20,9 +20,9 @@ document.set("#point", function(doc,e){
 
 var l = repository.list();
 document.set("#repolist", function(doc,e){
-	doc.set(".alert", "len:" + l.length);
-	doc.out(e);
-	/*
+	//doc.set(".alert", "len:" + l.length);
+	//doc.out(e);
+	
 	if(l.length > 0){
 		//for(i in data.point){
 		//	var b = document.select(".repo");
@@ -32,7 +32,7 @@ document.set("#repolist", function(doc,e){
 		var b = document.select(".alert");
 		doc.out(b);
 	}
-	*/
+	
 });
 
 document.out();
