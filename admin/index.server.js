@@ -17,6 +17,7 @@ document.set("#point", function(doc,e){
 	document.set("#point", "test");
 });
 */
+doc.set("#debug",serialize(function(){ }));
 
 var l = repository.list();
 document.set("#repolist", function(doc,e){
@@ -31,7 +32,6 @@ document.set("#repolist", function(doc,e){
 		}
 	}else{
 		var b = document.select(".alert");
-		doc.set(".alert",serialize(function(){ }))
 		doc.out(b);
 	}
 	
