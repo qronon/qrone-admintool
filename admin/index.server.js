@@ -17,22 +17,19 @@ document.set("#point", function(doc,e){
 	document.set("#point", "test");
 });
 */
-document.set("#debug",serialize(function(){ }));
+serialize(function(){});
 
 var l = repository.list();
+
 document.set("#repolist", function(doc,e){
-	//doc.set(".alert", "len:" + l.length);
-	//doc.out(e);
 	
 	if(l.length > 0){
-		var b = document.select(".repo");
 		for(i in l){
 			doc.set(i);
-			doc.out(b);
+			doc.out($(".repo"));
 		}
 	}else{
-		var b = document.select(".alert");
-		doc.out(b);
+		doc.out($(".alert"));
 	}
 	
 });
