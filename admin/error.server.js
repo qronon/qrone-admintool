@@ -1,10 +1,6 @@
 
-
-var stacktrace = "";
-var array = exception.getStackTrace();
-for(var i in array){
-	stacktrace += array[i] + "</br>";
-}
-
-document.set("#stacktrace", stacktrace);
+document.set("#file", exception.file);
+document.set("#line", exception.line);
+document.set("#stacktrace", exception.stacktrace);
+document.set("#source", exception.source);
 document.out();
