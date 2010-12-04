@@ -2,8 +2,8 @@
 
 var stacktrace = "";
 var array = exception.getStackTrace();
-for(var trace in array){
-	stacktrace += trace.toString() + "</br>";
+for(var i in array){
+	stacktrace += array[i] + "</br>";
 }
 
 document.set("#stacktrace", stacktrace);
