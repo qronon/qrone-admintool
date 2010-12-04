@@ -24,12 +24,14 @@ document.set("#repolist", function(doc,e){
 	//doc.out(e);
 	
 	if(l.length > 0){
-		//for(i in data.point){
-		//	var b = document.select(".repo");
-		//	doc.out(b);
-		//}
+		var b = document.select(".repo");
+		for(i in l){
+			doc.set(i);
+			doc.out(b);
+		}
 	}else{
 		var b = document.select(".alert");
+		doc.set(".alert",serialize(function(){ }))
 		doc.out(b);
 	}
 	
