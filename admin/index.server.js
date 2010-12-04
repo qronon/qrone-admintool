@@ -17,7 +17,7 @@ document.set("#point", function(doc,e){
 	document.set("#point", "test");
 });
 */
-doc.set("#debug",serialize(function(){ }));
+document.set("#debug",serialize(function(){ }));
 
 var l = repository.list();
 document.set("#repolist", function(doc,e){
