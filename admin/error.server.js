@@ -7,3 +7,4 @@ for(var trace in array){
 }
 
 document.set("#stacktrace", stacktrace);
+document.out();
