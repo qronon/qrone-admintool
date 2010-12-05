@@ -16,12 +16,25 @@ document.set("#point", function(doc,e){
 	}
 	document.set("#point", "test");
 });
+
+
+document.set("#repolist", function(doc,e){
+	
+	if(l.length > 0){
+		for(i in l){
+			doc.set(i);
+			doc.out($(".repo"));
+		}
+	}else{
+		doc.out($(".alert"));
+	}
+	
+});
 */
-serialize(function(){});
 
 var l = repository.list();
 
-document.set("#repolist", function(doc,e){
+$("#repolist").html(function(doc,e){
 	
 	if(l.length > 0){
 		for(i in l){
