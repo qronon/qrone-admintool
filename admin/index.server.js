@@ -34,18 +34,16 @@ document.set("#repolist", function(doc,e){
 
 var l = repository.list();
 
-$("#repolist").html(function(doc,e){
-	
-	if(l.length > 0){
-		for(i in l){
-			doc.set(i);
-			doc.out($(".repo"));
-		}
-	}else{
-		doc.out($(".alert"));
+if(l.length > 0){
+	var repolist = $("#repolist");
+	for(i in l){
+		var repo = $(".repo").clone();
+		// list
+		repolist.append();
 	}
-	
-});
+}else{
+	$("#repolist").html($(".alert"));
+}
 
 document.out();
 

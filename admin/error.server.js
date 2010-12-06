@@ -1,4 +1,5 @@
 
+$("#message").html(exception.message);
 $("#file").html(exception.file);
 $("#line").html(parseInt(exception.line));
 $("#stacktrace").html(exception.stacktrace.replace(/\n/g,"<br/>"));
