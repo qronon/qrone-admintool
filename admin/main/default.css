@@ -39,14 +39,13 @@ p{
 	width:500px;
 }
 
-.rightcolumn{
+#rightcolumn{
 	width:200px;
 	padding:3px;
 	margin-left:15px;
 	float:right;
 	border:solid 0px gray;
 	border-left-width:1px;
-	include:url(sidebar.html);
 }
 
 .block{
