@@ -33,7 +33,7 @@ document.set("#repolist", function(doc,e){
 */
 
 var t = load_template("main/qrone-frame.html");
-t.select("#content").html($("frame"));
+t.select("#content").html($("#frame"));
 $("body").html(t);
 
 var l = repository.list();
