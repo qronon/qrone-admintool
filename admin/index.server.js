@@ -32,18 +32,20 @@ document.set("#repolist", function(doc,e){
 });
 */
 
-var l = repository.list();
+var t = load_template("main/qrone-frame.html");
+t.select("#content").html($("body"));
+$("body").html(t);
 
+var l = repository.list();
 if(l.length > 0){
 	var repolist = $("#repolist");
 	for(i in l){
 		var repo = $(".repo").clone();
 		// list
-		repolist.append();
+		repolist.append(repo);
 	}
 }else{
 	$("#repolist").html($(".alert"));
 }
 
-document.out();
 
