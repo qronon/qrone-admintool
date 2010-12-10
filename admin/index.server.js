@@ -13,8 +13,8 @@ if(l.length > 0){
 		var repo = $(".repo").clone();
 		for(j in l[i]){
 			
-			$(".repo-title",repo).html(l[i].repo);
-			$(".repo-owner",repo).html(l[i].user);
+			$(".repo-title",repo).html(l[i].name);
+			$(".repo-owner",repo).html(l[i].owner);
 			$(".repo-body",repo).html("test:"+query["test"]);
 			
 		}
