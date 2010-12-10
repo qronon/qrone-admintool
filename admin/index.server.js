@@ -16,6 +16,7 @@ if(l.length > 0){
 			$(".repo-owner",repo).html(l[i].user);
 			$(".repo-title",repo).html(l[i].name);
 			$(".repo-body",repo).html("test:"+query["test"]);
+			
 		}
 		
 		repolist.append(repo);
