@@ -11,7 +11,13 @@ if(l.length > 0){
 	var repolist = $("#repolist");
 	for(i in l){
 		var repo = $(".repo").clone();
-		// list
+		for(j in l[i]){
+			
+			$(".repo-owner",repo).html(l.user);
+			$(".repo-title",repo).html(l.name);
+			$(".repo-body",repo).html("test:"+query["test"]);
+		}
+		
 		repolist.append(repo);
 	}
 }else{
