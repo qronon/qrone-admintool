@@ -1,6 +1,6 @@
 
 repository.add({
+	owner:query["owner"],
 	name:query["name"],
-	repo:query["repo"],
-	tag :query["tag"]
+	tree_sha :query["tree_sha"]
 });
