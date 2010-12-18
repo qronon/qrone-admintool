@@ -8,9 +8,14 @@
 
 <script type="text/javascript" src="/admin/sourcehighlight/shCore.js"></script>
 <script type="text/javascript" src="/admin/sourcehighlight/shBrushJScript.js"></script>
+<script type="text/javascript" src="/admin/json/json2.js"></script>
+<script type="text/javascript" src="/admin/json/json_formatter.js"></script>
  
 <script type="text/javascript">
-     SyntaxHighlighter.all()
+     SyntaxHighlighter.all();
+     var json = JSON.parse(document.getElementById("scope").innerHTML);
+     var formatter = new Json.Formatter( json );
+     document.getElementById("scope").innerHTML = formatter.value;
 </script>
 </head>
 <body style="font-family:Arial;">
