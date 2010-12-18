@@ -12,10 +12,12 @@ if(l.length > 0){
 	for(i in l){
 		var repo = $(".repo").clone();
 		for(j in l[i]){
-			
 			$(".repo-title",repo).html(l[i].name);
 			$(".repo-owner",repo).html(l[i].owner);
-			$(".repo-body",repo).html("test:"+query["test"]);
+			
+			var repoinfo = http.get("http://github.com/api/v2/yaml/repos/show/" + l[i].owner + "/" + l[i].name);
+			repoinfo = Yaml.decode(repoinfo);
+			$(".repo-body",repo).html(repoinfo.repository.description);
 			
 		}
 		
