@@ -20,8 +20,8 @@ if(l.length > 0){
 		}
 		
 		repolist.append(repo);
-		$(".alert").remove();
 	}
+	$(".alert").remove();
 }else{
 	$("#repolist").html($(".alert"));
 }
