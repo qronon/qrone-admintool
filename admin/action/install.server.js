@@ -1,6 +1,6 @@
 
 repository.add({
-	owner:query["owner"],
-	name:query["name"],
-	tree_sha :query["tree_sha"]
+	owner:request.post["owner"],
+	name:request.post["name"],
+	tree_sha :request.post["tree_sha"]
 });
