@@ -13,8 +13,9 @@ if(l.length > 0){
 		var repo = $(".repo").clone();
 		$(".repo-title",repo).html(l[i].name);
 		$(".repo-owner",repo).html(l[i].owner);
-			
-		var repoinfo = http.get("http://github.com/api/v2/yaml/repos/show/" + l[i].owner + "/" + l[i].name);
+		
+		var repourl = "http://github.com/api/v2/yaml/repos/show/" + l[i].owner + "/" + l[i].name;
+		var repoinfo = http.get(repourl);
 		repoinfo = YAML.decode(repoinfo);
 		$(".repo-body",repo).html(repoinfo.repository.description);
 		
