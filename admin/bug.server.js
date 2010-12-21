@@ -9,6 +9,7 @@ var test_object = {
 
 var t = document;
 var l = repository.list();
+var length = l.length;
 
 bug.bug.bug;
 
