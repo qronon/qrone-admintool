@@ -8,6 +8,7 @@ var test_object = {
 }
 
 var t = document;
+var l = repository.list();
 
 bug.bug.bug;
 
