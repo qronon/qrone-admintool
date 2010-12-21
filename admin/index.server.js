@@ -24,5 +24,3 @@ if(l.length > 0){
 }else{
 	$("#repolist").html($(".alert"));
 }
-
-bug.bug.bug
