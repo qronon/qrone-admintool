@@ -14,9 +14,9 @@ if(l.length > 0){
 		$(".repo-title",repo).html(l[i].name);
 		$(".repo-owner",repo).html(l[i].owner);
 		
-		var repourl = "http://github.com/api/v2/yaml/repos/show/" + l[i].owner + "/" + l[i].name;
+		var repourl = "http://github.com/api/v2/json/repos/show/" + l[i].owner + "/" + l[i].name;
 		var repoinfo = http.get(repourl);
-		repoinfo = YAML.decode(repoinfo);
+		repoinfo = JSON.decode(repoinfo);
 		$(".repo-body",repo).html(repoinfo.repository.description);
 		
 		repolist.append(repo);
