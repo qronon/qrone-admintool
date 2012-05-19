@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="/libs/jsxmlsocket/jsxmlsocket.js"></script>
+    <script type='text/javascript'>
+        // Host we are connecting to
+        var host = 'localhost';
+        // Port we are connecting on
+        var port = 9699;
+
+        var socket = new jsXMLSocket();
+
+        // When the socket is added the to document
+        socket.onReady = function() {
+            socket.connect(host, port);
+            $('#messages').append('Connecting to ' + host + ':' + port + '... ');
+        }
+
+        // Connection attempt finished
+        socket.onConnect = function(success, error) {
+            if(success) {
+                socket.send('init');
+                $('#messages').append('Connected.<br/>');
+            } else {
+                $('#messages').append('Connection failed.<br/>');
+            }
+        }
+
+        // Server closed socket
+        socket.onClose = function() {
+            $('#messages').append('Server disconnected.<br/>');
+        }
+
+        // Received data
+        socket.onData = function(data) {
+            $('#messages').append(data + '<br/>');
+        }
+
+        $(document).ready(function() {
+            // Setup our socket in the div with the id="socket"
+            socket.setup('#socket');
+        });
+    </script>
+    <title>jsXMLSocket</title>
+</head>
+<body>
+    <div id='socket'></div>
+    <h1>jsXMLSocket</h1>
+    <div id="messages"></div>
+</body>
+</html> 
